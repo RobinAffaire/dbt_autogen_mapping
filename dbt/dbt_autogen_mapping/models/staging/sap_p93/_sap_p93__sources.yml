@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: sap_p93
+      description: SF sources for SAP P93
+      database: sap_p93
+      schema: raw
+      tables: 
+        - name: 2LIS_11_VAHDR
+          description: SAP Order header
+          quoting:
+            identifier: true
