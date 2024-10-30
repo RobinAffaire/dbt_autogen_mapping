@@ -1,47 +1,24 @@
 version: 2
 
 seeds:
-  - name: rstranfield_pw1_2LIS
+  - name: rstranfield_pw1_2lis
     description: PW1 table RSTRANFIELD for 2LISx
     config:
       delimiter: ';'
+  - name: rstranrule_pw1_2lis
+    description: PW1 table RSTRANRULE for 2LISx
+    config:
+      delimiter: ';'
+  - name: rstranstepcnst_pw1_2lis
+    description: PW1 table RSTRANSTEPCNST for 2LISx
+    config:
+      delimiter: ';'
+  - name: rstran_pw1_2lis
+    description: PW1 table RSTRAN for 2lisx
+    config:
+      delimiter: ';'
+  - name: rsdodsoiobj_pw1_2lis
+    description: PW1 table RSDODSOIOBJ for 2lisx
+    config:
+      delimiter: ';'
       quote_columns: true
-    columns:
-      - name: empty1
-        description: Empty column automatically exported by sap
-
-      - name: tranid
-        description: Transformation ID
-
-      - name: objvers
-        description: Object version (SAP technical axis - should be equal to 'A')
-
-      - name: segid
-        description: Segment ID
-
-      - name: ruleid
-        description: Rule ID
-
-      - name: stepid
-        description: Step ID
-
-      - name: paramtype
-        description: Parameter type
-      
-      - name: paramnm
-        description: Parameter name
-
-      - name: fieldnm
-        description: Field name
-
-      - name: fieldtype
-        description: Field type
-
-      - name: keyflag
-        description: Key flag
-
-      - name: ruleposit
-        description: Rule position
-
-      - name: aggr
-        description: Aggregation

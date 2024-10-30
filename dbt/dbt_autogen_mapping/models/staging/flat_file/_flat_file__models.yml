@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_flat_file__rstranfield_pw1_2lis
+    config:
+      alias: rstranfield_pw1_2lis
+      
+  - name: stg_flat_file__rstranrule_pw1_2lis
+    config:
+      alias: rstranrule_pw1_2lis
+
+  - name: stg_flat_file__rstran_pw1_2lis
+    config:
+      alias: rstran_pw1_2lis
+
+  - name: stg_flat_file__rsdodsoiobj_pw1_2lis
+    config:
+      alias: rsdodsoiobj_pw1_2lis

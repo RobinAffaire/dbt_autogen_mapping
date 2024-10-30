@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: tech_mart
+    description: Entities stored in db tech / schema intermediate
+    database: tech
+    schema: mart
+    tables: 
+      - name: datasource_attributes__staging_statement__field_detailed
+        description: View created in other dbt project - contain sap fieldnames - dbt fieldnames matching

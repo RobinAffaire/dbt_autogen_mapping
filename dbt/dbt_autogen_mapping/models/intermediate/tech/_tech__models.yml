@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_transfo_mapping__get_mapping_fields
+    config:
+      alias: transfo_mapping__get_mapping_fields
+  - name: int_transfo_mapping__get_mapping_rules
+    config:
+      alias: transfo_mapping__get_mapping_rules
+  - name: int_transfo_mapping__l1
+    config:
+      alias: transfo_mapping__l1
+  - name: int_transfo_mapping__get_target_struct__dso
+    config:
+      alias: transfo_mapping__get_target_struct__dso

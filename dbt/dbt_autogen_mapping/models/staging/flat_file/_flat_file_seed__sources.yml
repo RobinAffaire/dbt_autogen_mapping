@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: flat_file_seed
+      description: SF sources for flat_file seeds
+      database: flat_file
+      schema: seed
+      tables: 
+        - name: rstranfield_pw1_2lis
+          description: SAP BW PW1 table RSTRANFIELD
+        - name: rstranrule_pw1_2lis
+          description: SAP BW PW1 table RSTRANRULE
+        - name: rstranstepcnst_pw1_2lis
+          description: SAP BW PW1 table RSTRANSTEPCNST
+        - name: rstran_pw1_2lis
+          description: SAP BW PW1 table RSTRAN
+        - name: rsdodsoiobj_pw1_2lis
+          description: SAP BW PW1 table RSDODSOIOBJ
