@@ -35,10 +35,7 @@ models:
       flat_file:
         +database: flat_file
         +schema: staging
-      sap_p93:
-        +database: sap_p93
-        +schema: staging
-      
+
     intermediate:
       tech:
         +database: tech
@@ -48,6 +45,7 @@ models:
       tech:
         +database: tech
         +schema: mart
+        +materialized: table
 
 seeds:
   +database: flat_file

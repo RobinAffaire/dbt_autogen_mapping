@@ -9,6 +9,18 @@ renamed as (
       objvers as object_version,
 
       -- strings
+      lower(sourcetype) as source_type,
+      lower(sourcename) as source_name,
+      lower(targettype) as target_type,
+      lower(targetname) as target_name,
+
+      -- numerics
+      startroutine as start_routine_id,
+      endroutine   as end_routine_id,
+      expert       as expert_routine_id,
+      tranprog     as transformation_code_id,
+
+      -- not used
       objstat as object_status,
       contrel,
       conttimestmp,
@@ -17,17 +29,9 @@ renamed as (
       activfl,
       tstpnm,
       timestmp,
-      sourcetype as source_type,
       sourcesubtype,
-      sourcename as source_name,
-      targettype as target_type,
       targetsubtype,
-      targetname as target_name,
-      startroutine as start_routine_id,
-      endroutine   as end_routine_id,
-      expert       as expert_routine_id,
       glbcode,
-      tranprog     as transformation_code_id,
       version_cur,
       target_tab_type,
       is_shadow,

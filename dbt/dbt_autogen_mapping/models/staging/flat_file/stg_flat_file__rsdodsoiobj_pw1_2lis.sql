@@ -5,13 +5,13 @@ with source as (
 renamed as (
     select
       -- ids
-      odsobject as dso_name,
+      lower(odsobject) as dso_name,
       objvers   as object_version,
-      odstable  as dso_table,
+      lower(odstable)  as dso_table,
       posit     as field_number,
 
       -- strings
-      iobjnm as infoobject_name,
+      lower(iobjnm) as infoobject_name,
 
       -- booleans
       {{ sap_to_boolean('keyflag')}} as is_key,

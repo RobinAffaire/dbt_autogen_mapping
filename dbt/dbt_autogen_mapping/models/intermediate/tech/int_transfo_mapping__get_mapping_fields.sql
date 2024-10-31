@@ -12,8 +12,8 @@ worked as (
       source.rule_id           as rule_id,
 
       -- Lookup fields
-      source.field_name        as source_field_name,
-      target.field_name        as target_field_name,
+      source.field_name        as source_field,
+      target.field_name        as target_field,
       source.key_flag          as source_is_key,
       target.key_flag          as target_is_key,
 

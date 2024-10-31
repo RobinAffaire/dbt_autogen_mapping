@@ -7,9 +7,18 @@ models:
   - name: int_transfo_mapping__get_mapping_rules
     config:
       alias: transfo_mapping__get_mapping_rules
-  - name: int_transfo_mapping__l1
+  - name: int_transfo_mapping__get_target_struct
     config:
-      alias: transfo_mapping__l1
-  - name: int_transfo_mapping__get_target_struct__dso
+      alias: transfo_mapping__get_target_struct
+  - name: int_transfo_mapping__build_statement__body
     config:
-      alias: transfo_mapping__get_target_struct__dso
+      alias: transfo_mapping__build_statement__body
+  - name: int_transfo_mapping__build_statement__header
+    config:
+      alias: transfo_mapping__build_statement__header
+  - name: int_transfo_mapping__get_source_struct__prepare
+    config:
+      alias: transfo_mapping__get_source_struct__prepare
+  - name: int_transfo_mapping__get_source_struct
+    config:
+      alias: transfo_mapping__get_source_struct

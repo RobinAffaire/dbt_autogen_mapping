@@ -11,8 +11,8 @@ renamed as (
       stepid  as step_id,
 
       -- strings
-      value   as value,
-      inttype as type,
+      lower(value)   as value,
+      lower(inttype) as type,
       
       -- numerics
       length  as length,

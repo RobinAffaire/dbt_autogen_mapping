@@ -10,10 +10,10 @@ renamed as (
       ruleid  as rule_id,
 
       -- strings
-      grouptype   as group_type,
-      ruletype    as rule_type,
-      field_usage as field_usage,
-      aggr        as aggregation_type,
+      lower(grouptype)   as group_type,
+      lower(ruletype)    as rule_type,
+      lower(field_usage) as field_usage,
+      lower(aggr)        as aggregation_type,
       
       -- numerics
       seqnr    as sequence_number,

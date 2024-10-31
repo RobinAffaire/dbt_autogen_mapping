@@ -1,6 +1,0 @@
-version: 2
-
-models:
-  - name: stg_sap_p93__2lis_11_vahdr
-    config:
-      alias: 2lis_11_vahdr

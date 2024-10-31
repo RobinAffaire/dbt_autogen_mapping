@@ -14,12 +14,12 @@ renamed as (
                      when 1 then 'target'
                      else 'err_unknown' end as parameter_type,
                      
-      paramnm as parameter_name,
+      lower(paramnm) as parameter_name,
 
       -- strings
-      fieldnm   as field_name,
-      fieldtype as field_type,
-      aggr      as aggregation_type,
+      lower(fieldnm)   as field_name,
+      lower(fieldtype) as field_type,
+      lower(aggr)      as aggregation_type,
 
       -- numerics
       ruleposit as rule_position,

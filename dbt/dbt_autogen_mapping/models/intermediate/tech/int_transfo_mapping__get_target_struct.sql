@@ -24,14 +24,14 @@ worked as (
 
       -- transformation details
       header.target_type       as target_type,
-      dso.dso_name             as dso_name,
-      dso.field_number         as dso_field_number,
-      dso.is_key               as field_is_key,
-      dso.infoobject_name      as field_name,
-      
+      dso.dso_name             as target_name,
+      dso.field_number         as target_field_number,
+      dso.is_key               as target_field_is_key,
+      dso.infoobject_name      as target_field,
+
     from header
     left outer join dso
-      on  header.target_type = 'ODSO'
+      on  header.target_type = 'odso'
       and header.target_name = dso.dso_name
 )
 
